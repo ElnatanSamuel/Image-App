@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image editor</title>
+  </head>
+  <!-- body part -->
+  <body>
+    <nav class="navbar">
+      <p>Online Photo Editor</p>
+      <input class="createimg" type="file" accept="image/*" hidden />
+      <div class="navbtns">
+        <button class="chooseimg">Choose image</button>
+        <button class="savebtn">Save image</button>
+      </div>
+    </nav>
+    <div class="mainobj">
+      <div class="menuside">
+        <div class="filters">
+          <h1>Filters</h1>
+          <p>
+            <label for="brightness">Brightness:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="brightness"
+              value="0"
+              min="-1"
+              max="1"
+              step="0.01"
+            />
+          </p>
+
+          <p>
+            <label for="saturation">Saturation:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="saturation"
+              value="0"
+              min="-1"
+              max="1"
+              step="0.01"
+            />
+          </p>
+
+          <p>
+            <label for="contrast">Contrast:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="contrast"
+              value="0"
+              min="-1"
+              max="1"
+              step="0.01"
+            />
+          </p>
+
+          <p>
+            <label for="hue">Hue:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="hue"
+              value="0"
+              min="-2"
+              max="2"
+              step="0.01"
+            />
+          </p>
+
+          <p>
+            <label for="blur">Blur:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="blur"
+              value="0"
+              min="0"
+              max="1"
+              step="0.01"
+            />
+          </p>
+
+          <p>
+            <label for="noise">Noise:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="noise"
+              value="0"
+              min="0"
+              max="1000"
+              step="100"
+            />
+          </p>
+
+          <p>
+            <label for="viberance">Vibrance:</label>
+            <input
+              class="slide-range"
+              type="range"
+              id="viberance"
+              value="0"
+              min="0"
+              max="2"
+              step=".01"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="canvasside">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="fabric.js"></script>
+  </body>
+  <!--  -->
+</html>

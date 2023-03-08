@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  height: 60px;
+  background: rgb(25, 25, 25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar p {
+  color: rgb(195, 8, 63);
+  padding-left: 14px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbtns {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.chooseimg {
+  background-color: #c3083f;
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.savebtn {
+  background-color: #81052a;
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mainobj {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.menuside {
+  background: rgb(25, 25, 25);
+  flex: 1;
+}
+
+.canvasside {
+  flex: 5;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: rgb(43, 43, 43);
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.filters p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.filters h1 {
+  color: white;
+  opacity: 70%;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.filters p label {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* .filter {
+  background: transparent;
+  border: 1px solid rgb(195, 8, 63);
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+} */
+
+.slide-range {
+  height: 5px;
+  accent-color: #c3083f;
+}
