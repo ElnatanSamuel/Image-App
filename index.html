@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <title>Image editor</title>
   </head>
   <!-- body part -->
@@ -14,11 +18,12 @@
       <input class="createimg" type="file" accept="image/*" hidden />
       <div class="navbtns">
         <button class="chooseimg">Choose image</button>
-        <button class="savebtn">Save image</button>
+        <a class="savebtn" href="#">Save image</a>
       </div>
     </nav>
     <div class="mainobj">
       <div class="menuside">
+        <!-- filters -->
         <div class="filters">
           <h1>Filters</h1>
           <p>
@@ -112,6 +117,49 @@
             />
           </p>
         </div>
+
+        <!-- insert -->
+        <div class="insert">
+          <h1>Insert</h1>
+
+          <div>
+            <button class="insertbtn">Insert Text</button>
+            <input class="addnewimg" type="file" accept="image/*" hidden />
+            <button class="newimagebtn">Insert Image</button>
+            <button class="insertline">Insert Line</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <!-- Brush -->
+
+        <div class="draw">
+          <h1>Draw</h1>
+          <div>
+            <button class="pencildraw">Draw tool</button>
+            <button class="exitdraw">Exit drawing mode</button>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="remove">
+          <h1>Remove</h1>
+          <button class="removeobj">Remove selected</button>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="shapes">
+          <h1>Shapes</h1>
+          <div class="insertpart">
+            <button class="rectangle"><i class="uil uil-square"></i></button>
+            <button class="triangle"><i class="uil uil-triangle"></i></button>
+            <button class="circle"><i class="uil uil-circle"></i></i></button>
+            <button class="pentagon"><i class="uil uil-pentagon"></i></button>
+          </div>
+        </div>
+        <!--  -->
       </div>
       <div class="canvasside">
         <canvas id="canvas"></canvas>

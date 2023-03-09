@@ -9,6 +9,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #949494;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(195, 8, 63);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(158, 6, 52);
+}
+
 .navbar {
   height: 60px;
   background: rgb(25, 25, 25);
@@ -61,10 +84,12 @@ body {
 .menuside {
   background: rgb(25, 25, 25);
   flex: 1;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .canvasside {
-  flex: 5;
+  flex: 4;
   overflow-y: hidden;
   overflow-x: hidden;
   background: rgb(43, 43, 43);
@@ -96,7 +121,26 @@ body {
   font-weight: bold;
 }
 
-/* .filter {
+.slide-range {
+  height: 5px;
+  accent-color: #c3083f;
+}
+
+.insert {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.insert h1 {
+  color: white;
+  opacity: 70%;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.insertbtn {
   background: transparent;
   border: 1px solid rgb(195, 8, 63);
   padding: 10px 16px;
@@ -104,9 +148,113 @@ body {
   font-weight: bold;
   font-size: 12px;
   cursor: pointer;
-} */
+  margin-bottom: 10px;
+}
 
-.slide-range {
-  height: 5px;
-  accent-color: #c3083f;
+.insertline {
+  background: transparent;
+  border: 1px solid rgb(195, 8, 63);
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.newimagebtn {
+  background: transparent;
+  border: 1px solid rgb(195, 8, 63);
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.draw {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.draw h1 {
+  color: white;
+  opacity: 70%;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.pencildraw {
+  background: transparent;
+  border: 1px solid rgb(195, 8, 63);
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.exitdraw {
+  background: rgb(195, 8, 63);
+  border: none;
+  padding: 10px 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.remove {
+  gap: 10px;
+  padding: 20px;
+}
+
+.remove h1 {
+  color: white;
+  opacity: 70%;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.removeobj {
+  background: rgb(195, 8, 63);
+  border: none;
+  padding: 10px 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.shapes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.shapes h1 {
+  color: white;
+  opacity: 70%;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.insertpart {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.insertpart button {
+  padding: 10px 0;
+  background: #950741;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #950741;
+  width: 40px;
 }
