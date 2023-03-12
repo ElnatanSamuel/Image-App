@@ -228,7 +228,7 @@ function saveBtnFun(e) {
   this.href = canvas.toDataURL({
     format: "png",
   });
-  this.download = "canvas.png";
+  this.download = "image.png";
 }
 
 //
